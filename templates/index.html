@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Form</title>
+</head>
+<body>
+    <h1>User Input Form</h1>
+
+    <form action="/join" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="display_name" required>
+
+        <br>
+
+        <label for="mute_audio">Mute Audio (1 for Yes, 0 for No):</label>
+        <input type="number" id="mute_audio" name="mute_audio" min="0" max="1" required>
+
+        <br>
+
+        <label for="mute_video">Mute Video (1 for Yes, 0 for No):</label>
+        <input type="number" id="mute_video" name="mute_video" min="0" max="1" required>
+
+        <br>
+
+        <label for="room_number">Room Number:</label>
+        <input type="text" id="room_number" name="room_id" required>
+
+        <br>
+
+        <button type="submit">Join Room</button>
+    </form>
+</body>
+</html>
